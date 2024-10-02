@@ -46,13 +46,14 @@ h1 {
     position: absolute !important;
     left: 50%;
     transform: translateX(-50%);
-    top: 50px;
-    font-size: 300px;
+    top: 5px;
+    font-size: 20em;
     font-family: "Bebas Neue", sans-serif;
     animation: fadeOutAnimation ease-in 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     z-index: -1;
+    width: 100%;
 }
 
 @keyframes fadeOutAnimation {
@@ -83,7 +84,7 @@ h1 {
 }
 
 .introImg {
-    width: 20vw;
+    width: 23vw;
     animation: rotation 4s infinite linear;
 }
 
@@ -100,5 +101,27 @@ h1 {
 
     to {
         transform: rotate(359deg);
+    }
+}
+
+/* Media queries for under 992px width screens */
+
+@media (max-width: 992px) {
+    .hiddenMessage {
+        top: 15%;
+        font-size: 200px;
+    }
+
+    .introImg {
+        width: 50vw;
+    }
+}
+
+/* Media queries for under 768px width screens */
+
+@media (max-width: 768px) {
+    .hiddenMessage {
+        top: 30%;
+        font-size: 100px;
     }
 }

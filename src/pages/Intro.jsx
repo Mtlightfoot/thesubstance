@@ -9,6 +9,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function Intro() {
+
     return (
         <Container className='introGridContainer'>
             <Row>
