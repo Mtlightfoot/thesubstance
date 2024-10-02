@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.introGridContainer {
+    text-align: center;
+    height: 75svh;
+    margin-top: 25svh;
+}
+
+.introQ {
+    animation: fadeInAnimation ease-in 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hiddenMessage {
+    background-image: url('./liquid.gif');
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: absolute !important;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+    font-size: 300px;
+    font-family: "Bebas Neue", sans-serif;
+    animation: fadeOutAnimation ease-in 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: -1;
+}
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.optionBtns {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.optionBtn {
+    font-size: 60px !important;
+    font-family: "Bebas Neue", sans-serif !important;
+    border: none !important;
+}
+
+#noBtn:hover {
+    color: white !important;
+    background: none !important;
+    transition: 0.1s;
+}
+
+.introImg {
+    width: 20vw;
+    animation: rotation 4s infinite linear;
+}
+
+.introImgCol {
+    animation: fadeInAnimation ease-in 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
