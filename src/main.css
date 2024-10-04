@@ -126,15 +126,21 @@ h1 {
 /* CSS for Steps page */
 
 .youAreOneContainer {
-    border: 1px red solid;
     text-align: center;
     height: 100svh;
 }
 
 .youAreOneCol {
-    height: auto;
+    height: 25svh;
     display: block;
     max-width: 100%;
+    align-content: center;
+}
+
+.youAreOneMidCol {
+    height: 50svh;
+    max-width: 100%;
+    align-content: center;
 }
 
 #youAreOneText {
@@ -144,9 +150,22 @@ h1 {
 }
 
 .youAreOneVideo {
-    width: 70%;
+    height: 50svh;
 }
 
+.youAreOneBtn {
+    width: 30%;
+    height: 0;
+    padding-bottom: 30%;
+    border-radius: 50%;
+    background-image: url('/hand-circle.gif');
+    background-size: cover;
+    border: none;
+}
+
+.youAreOneBtn:hover {
+    filter: invert(1);
+}
 
 /* Media queries for under 992px width screens */
 
@@ -175,5 +194,10 @@ h1 {
 
     .youAreOneVideo {
         width: 100%;
+    }
+
+    .youAreOneBtn {
+        width: 70%;
+        padding-bottom: 70%;
     }
 }
