@@ -78,6 +78,24 @@ h1 {
     border: none !important;
 }
 
+.lastOptionBtn {
+    background-image: url('/green.gif');
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.lastOptionBtn:hover {
+    background-image: url('/dna.gif');
+    background-size: 500%;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
 #noBtn:hover {
     color: white !important;
     background: none !important;
@@ -105,6 +123,31 @@ h1 {
     }
 }
 
+/* CSS for Steps page */
+
+.youAreOneContainer {
+    border: 1px red solid;
+    text-align: center;
+    height: 100svh;
+}
+
+.youAreOneCol {
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+#youAreOneText {
+    font-size: 100px !important;
+    margin-top: 8px;
+    letter-spacing: 5px;
+}
+
+.youAreOneVideo {
+    width: 70%;
+}
+
+
 /* Media queries for under 992px width screens */
 
 @media (max-width: 992px) {
@@ -125,7 +168,12 @@ h1 {
         top: 30%;
         font-size: 100px;
     }
+
     h1 {
         font-size: 5vw !important;
+    }
+
+    .youAreOneVideo {
+        width: 100%;
     }
 }
